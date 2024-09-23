@@ -1,4 +1,6 @@
-# Project Name
+# CoopyrightCode Light
+
+![License: CoopyrightCode Light](https://img.shields.io/badge/license-CoopyrightCode_Light_v1.1-blue)
 
 ## Overview
 
@@ -23,7 +25,3 @@ Full project documentation can be found on [Read the Docs](#) (link to Read the 
 ## License
 
 This project is licensed under the **CoopyrightCode Light License v1.1**. See the [LICENSE](./LICENSE) file for details.
-
-## Badges
-
-![License: CoopyrightCode Light](https://img.shields.io/badge/license-CoopyrightCode_Light_v1.1-blue)
