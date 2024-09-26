@@ -1,24 +1,73 @@
-  {% extends "main.html" %}
-  {% block tabs %}
-    {{ super() }}
-    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <div class="mdx-hero__image">
-            <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
-          </div>
-          <div class="mdx-hero__content">
-            <h1>Elevate AI to New Horizons</h1>
-            <p>{{ config.site_description }}</p>
-            <a href="{{ 'introduction/' | url }}" title="Documentation" class="md-button">
-              Documentation
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  {% endblock %}
-  {% block content %}{% endblock %}
-  {% block footer %}{% endblock %}
-  
+{% extends "main.html" %} {% block tabs %} {{ super() }}
+<style>
+  .md-main {
+    height: 0;
+  }
+
+  .md-header {
+    position: initial;
+  }
+
+  .md-main__inner {
+    margin: 0;
+  }
+
+  .md-content {
+    display: none;
+  }
+
+  .md-typeset h1 {
+    text-align: center;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+
+<section
+  class="fluid-box"
+  data-md-color-scheme="slate"
+  data-md-color-primary="indigo"
+>
+  <img
+    src="assets/images/illustration.png"
+    alt="Illustration of CoopyrightCode License"
+    width="100%"
+    height="auto"
+    draggable="false"
+  />
+  <div class="md-grid">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="open-source">
+          Layer 2 Blockchain Solutions for Fair Open Source Compensation
+        </h1>
+      </header>
+    </div>
+  </div>
+</section>
+
+<section class="md-container">
+  <div class="md-grid md-typeset">
+    <div class="mdx-intro">
+      <h3>Get Paid for Your Contributions, Without Compromising Open Source</h3>
+      <p>
+        <b>CoopyrightCode</b> enables open-source developers to receive fair compensation 
+        for their work, using blockchain technology to track, validate, and reward contributions 
+        without compromising the openness of the code.
+      </p>
+    </div>
+  </div>
+</section>
+
+{% endblock %} {% block footer %} {{ super() }} {% endblock %}
